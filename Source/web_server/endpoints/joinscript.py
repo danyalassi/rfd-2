@@ -110,7 +110,7 @@ def perform_join(self: web_server_handler, additional_data: dict[str, Any], sign
     self.send_json(join_data | additional_data, sign_prefix=sign_prefix)
 
 
-@server_path('/game/join.ashx', versions={versions.rōblox.v348})
+@server_path('/game/join.ashx', versions={versions.rōblox.v348, versions.rōblox.v271})
 def _(self: web_server_handler) -> bool:
     perform_join(self, {
         'ClientPort': 0,

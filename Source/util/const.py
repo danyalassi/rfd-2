@@ -1,7 +1,7 @@
-GIT_RELEASE_VERSION = '''0.58.2'''
+GIT_RELEASE_VERSION = '''0.1.2'''
 
-ZIPPED_RELEASE_VERSION = '''0.57.2-binaries'''
-ZIPPED_RELEASE_LINK_FORMAT = 'https://github.com/Windows81/Roblox-Freedom-Distribution/releases/download/%s/%s.%s.7z'
+ZIPPED_RELEASE_VERSION = '''0.1.2-binaries'''
+ZIPPED_RELEASE_LINK_FORMAT = 'https://github.com/danyalassi/rfd-2/releases/download/%s/%s.%s.7z'
 
 PLACE_IDEN_CONST = 1818
 
@@ -43,6 +43,8 @@ ALLOWED_MD5_HASHES = {
         "20a13e1db27108fb7fd1375366f1c0b5",
         "471c84516a9eead73c13d5369dc3fa51",
         "3231d09a8c3525a75e999789aa7d9df4",
+        "2022hashhere", # TODO: get client hash when done
+        "2016hashhere", # TODO: get client hash when done
     ]
 }
 

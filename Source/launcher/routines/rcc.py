@@ -213,6 +213,15 @@ class obj_type(logic.bin_web_entry, logic.server_entry, logic.restartable_entry)
             suffix_args.append('-verbose')
 
         match self.retr_version():
+            case util.versions.rōblox.v271:
+                return [
+                    self.get_versioned_path('RCCService.exe'),
+                    f'-PlaceId:{self.local_args.place_iden}',
+                    '-LocalTest', self.get_versioned_path(
+                        'GameServer.json',
+                    ),
+                    *suffix_args,
+                ]
             case util.versions.rōblox.v348:
                 return [
                     self.get_versioned_path('RCCService.exe'),

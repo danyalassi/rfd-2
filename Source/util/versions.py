@@ -5,12 +5,10 @@ import enum
 
 @functools.total_ordering
 class rōblox(enum.Enum):
-    # v271 = ('2016L', '2016',)
+    v271 = ('2016L', '2016',)
     v348 = ('2018M', '2018',)
     v463 = ('2021E', '2021',)
-
-    # TODO: get 2022L Studio to work with this program.
-    # v547 = '2022L'
+    v535 = ('2022L', '2022',)
 
     def get_number(self) -> int:
         return int(self.name[1:])
